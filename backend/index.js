@@ -14,7 +14,7 @@ app.use(cors());
 app.use("/students", studentRoutes);
 
 const CONNECTION_URL =
-  "mongodb+srv://sharonvijay2003:sharonvijay2003@mern.72x3pbl.mongodb.net/test?retryWrites=true&w=majority";
+  "mongodb+srv://sharonvijay2003:sharonvijay2003@mern.72x3pbl.mongodb.net/details?retryWrites=true&w=majority";
 
 mongoose
   .connect(CONNECTION_URL)
