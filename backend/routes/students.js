@@ -1,13 +1,13 @@
 import express from "express";
 
-import { getStudents } from "../controllers/students.js";
+import { getStudents, createStudent } from "../controllers/students.js";
 const router = express.Router();
 
 //GET ROUTE
 router.get("/", getStudents);
 
 // //POST ROUTE
-// router.post("/");
+router.post("/", createStudent);
 
 // //DELETE ROUTE
 // router.delete("/:id");

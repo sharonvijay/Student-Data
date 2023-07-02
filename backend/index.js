@@ -5,7 +5,7 @@ import mongoose from "mongoose";
 import studentRoutes from "./routes/students.js";
 const app = express();
 
-const PORT = 4000;
+const PORT = 5000;
 
 //MIDDLEWARES
 app.use(bodyParser.json({ limit: "30mb", extended: true }));
@@ -15,6 +15,8 @@ app.use("/students", studentRoutes);
 
 const CONNECTION_URL =
   "mongodb+srv://sharonvijay2003:sharonvijay2003@mern.72x3pbl.mongodb.net/details?retryWrites=true&w=majority";
+
+app.listen(PORT);
 
 mongoose
   .connect(CONNECTION_URL)

@@ -7,5 +7,5 @@ const studentSchema = mongoose.Schema({
   Course: String,
 });
 
-const studentDetail = mongoose.model("studenDetail", studentSchema);
+const studentDetail = mongoose.model("studentDetail", studentSchema);
 export default studentDetail;
